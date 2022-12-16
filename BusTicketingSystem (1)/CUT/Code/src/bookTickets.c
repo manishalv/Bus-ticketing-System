@@ -45,7 +45,7 @@ void bookTicket(int source, int destination,int seatNo)
 	}
 
         
-        //scanf("%ld",&T1.phoneNo);
+        
 
         
         printf("\n\nEnter your age: ");
