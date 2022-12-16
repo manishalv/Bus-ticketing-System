@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include"../include/header.h"
 
-//int *seatMatrix = (int *) malloc((10*8)*sizeof(int))={0};
+
 int seatMatrix[10][8]={0};
 
 
@@ -40,12 +40,12 @@ int displaySeatMatrix(void)
 
         printf("\n\t1->MAJESTIC\n\t2->MADIWALA\n\t3->BOMMASANDRA\n\t4->HOSUR\n\t5->KOCHI\n\t6->ETTUMANOOR\n\t7->KOTTAYAM\n\t8->CHINGAVANAM\n\n");
         
-	printf("\nBording point : ");
+	printf("\nBaording point : ");
         scanf("%s",source);
 
 	sourceVal = atoi(source);
 
-	if(sourceVal > 8 || sourceVal == 0)
+	if(sourceVal > 8 || sourceVal < 1)
 	{
 		printf("\n\nInvalid source or destination ! Please re-check the codes\n");
                 return 0;
@@ -57,7 +57,7 @@ int displaySeatMatrix(void)
 	destinationVal = atoi(destination);
 	
 
-        if(sourceVal >= destinationVal || destinationVal > 8 || destinationVal == 0)
+        if(sourceVal >= destinationVal || destinationVal > 8 || destinationVal < 1)
         {
                 printf("\n\nInvalid source or destination ! Please re-check the codes\n");
                 return 0;
